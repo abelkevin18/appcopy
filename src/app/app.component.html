@@ -1,2 +1,12 @@
-<router-outlet></router-outlet>
-
+<div class="wrapper">
+  <app-partial-navbar></app-partial-navbar>
+  <div id="content">
+    <app-partial-navheader></app-partial-navheader>
+    <router-outlet></router-outlet>
+    <ul>
+      <li><a (click)="setTitle( 'Good morning!' )">Good morning</a>.</li>
+      <li><a (click)="setTitle( 'Good afternoon!' )">Good afternoon</a>.</li>
+      <li><a (click)="setTitle( 'Good evening!' )">Good evening</a>.</li>
+    </ul>
+  </div>
+</div>
